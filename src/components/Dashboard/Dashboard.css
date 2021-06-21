@@ -1,0 +1,6 @@
+/* .dashboard-container {
+    display : grid;
+    min-height : calc(100vh - 80px);
+    grid-template-columns: 0.8fr 1fr 1fr 1fr;
+    grid-template-areas : "sidebar main main main";
+} */

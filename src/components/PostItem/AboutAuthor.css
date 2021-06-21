@@ -1,0 +1,19 @@
+.author-section {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px 15px;
+    display: table;
+}
+
+.author-section > * {
+    width: 80%;
+    margin: 20px auto;
+}
+
+.author-img img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    overflow: hidden;
+}

@@ -1,0 +1,23 @@
+:root {
+    --primaryColor: #ea4c89;
+    --primaryHover: #f082ac;
+    --secondaryColor: #6e6d7a;
+    --lightGray: #ddd;
+    --mainText: #0d0c22;
+    --subText: #9e9ea7;
+    --backgroundPrimary: #0d0c22;
+    --backgroundSecondary: rgba(13,12,34,0.05);
+    --footerBackground: #fafafb;
+    --borderLineColor: #e7e7e9;
+
+    /*
+        CATEGORY TAG COLORS
+    */
+    --nature: #fff;
+    --fashion: #fff;
+    --travel: #fff;
+    --food: tomato;
+    --technology: #fff;
+    --artsCrafts: #fff;
+
+}
