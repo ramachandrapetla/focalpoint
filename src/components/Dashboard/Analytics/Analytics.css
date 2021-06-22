@@ -29,6 +29,7 @@
     grid-gap: 20px;
     margin: 20px 0;
     grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
 }
 
 .card {
@@ -63,6 +64,16 @@
     color: var(--secondaryColor);
 }
 
+.adspace {
+    align-items: center;
+    justify-content: center;
+    background-color: hotpink;
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
 /* charts-section */
 
 .charts-grid {
@@ -72,6 +83,38 @@
 }
 
 @media only screen and (max-width: 978px) {
+    .welcome-wrapper {
+        grid-template-columns: 1fr 1fr;
+    }
+    .welcome-wrapper img {
+        display: block;
+    }
+    .welcome-user {
+        font-size: 1.5rem;
+        white-space: nowrap;
+    }
+    .welcome-message {
+        font-size: 1rem;
+    }
+    .statistics-wrapper {
+        grid-template-columns: 1fr 1fr;
+    }
+     .charts-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .adspace {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .charts-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media only screen and (max-width: 530px) {
     .welcome-wrapper {
         grid-template-columns: 1fr;
     }
@@ -88,4 +131,5 @@
     .statistics-wrapper, .charts-grid {
         grid-template-columns: 1fr;
     }
+
 }

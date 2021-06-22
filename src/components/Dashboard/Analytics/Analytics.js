@@ -44,7 +44,18 @@ class Analytics extends Component {
                                 <p className="text-primary-p">No of Something</p>
                                 <span className="font-bold text-title">657</span>
                             </div>
-                        </div>  
+                        </div>
+
+                        <div className="card">
+                            <i class="fas fa-blog fa-2x card-icon"></i>
+                            <div className="card_inner">
+                                <p className="text-primary-p">No of Something</p>
+                                <span className="font-bold text-title">657</span>
+                            </div>
+                        </div> 
+                        <div className="adspace">
+                            <p>AD SPACE</p>
+                        </div> 
                     </div>
                 </div>
                 <div className="charts-container">
