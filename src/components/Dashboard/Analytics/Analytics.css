@@ -15,6 +15,15 @@
     height: 100%;
     object-fit: cover;
 }
+
+.welcome-user {
+    font-size: 2rem;
+}
+.welcome-message {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--secondaryColor);
+}
 .statistics-wrapper {
     display: grid;
     grid-gap: 20px;
@@ -60,4 +69,23 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 10px;
+}
+
+@media only screen and (max-width: 978px) {
+    .welcome-wrapper {
+        grid-template-columns: 1fr;
+    }
+    .welcome-wrapper img {
+        display: none;
+    }
+    .welcome-user {
+        font-size: 1.5rem;
+        white-space: nowrap;
+    }
+    .welcome-message {
+        font-size: 1rem;
+    }
+    .statistics-wrapper, .charts-grid {
+        grid-template-columns: 1fr;
+    }
 }

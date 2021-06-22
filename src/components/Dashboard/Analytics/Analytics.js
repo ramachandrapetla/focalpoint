@@ -15,38 +15,37 @@ class Analytics extends Component {
                 <div className="welcome-wrapper">
                     <img src="https://s3-us-west-2.amazonaws.com/gaso1/godot-blogging.svg" />
                     <div>
-                        <h1>Hello Ramachandra Petla</h1>
-                        <p>Welcome to your Admin Dashboard</p>
+                        <h1 className="welcome-user">Hello Ramachandra Petla</h1>
+                        <p className="welcome-message">Welcome to your Admin Dashboard</p>
                     </div>
                 </div>
                 <div>
                     <h2>STATS</h2>
                     <div className="statistics-wrapper">
-                    <div className="card">
-                        <i class="fas fa-blog fa-2x card-icon"></i>
-                        <div className="card_inner">
-                            <p className="card-desc">Number of Subscribers</p>
-                            <span className="font-bold card-value">657</span>
+                        <div className="card">
+                            <i class="fas fa-blog fa-2x card-icon"></i>
+                            <div className="card_inner">
+                                <p className="card-desc">Number of Subscribers</p>
+                                <span className="font-bold card-value">657</span>
+                            </div>
                         </div>
-                    </div>
 
-                    <div className="card">
-                        <i class="fas fa-blog fa-2x card-icon"></i>
-                        <div className="card_inner">
-                            <p className="text-primary-p">Number of Views</p>
-                            <span className="font-bold text-title">657</span>
+                        <div className="card">
+                            <i class="fas fa-blog fa-2x card-icon"></i>
+                            <div className="card_inner">
+                                <p className="text-primary-p">Number of Views</p>
+                                <span className="font-bold text-title">657</span>
+                            </div>
                         </div>
-                    </div>
 
-                    <div className="card">
-                        <i class="fas fa-blog fa-2x card-icon"></i>
-                        <div className="card_inner">
-                            <p className="text-primary-p">No of Something</p>
-                            <span className="font-bold text-title">657</span>
-                        </div>
+                        <div className="card">
+                            <i class="fas fa-blog fa-2x card-icon"></i>
+                            <div className="card_inner">
+                                <p className="text-primary-p">No of Something</p>
+                                <span className="font-bold text-title">657</span>
+                            </div>
+                        </div>  
                     </div>
-                    
-                </div>
                 </div>
                 <div className="charts-container">
                     <h2 className="section-title">ANALYTICS</h2>

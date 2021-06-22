@@ -15,7 +15,7 @@ class Main extends Component {
         switch(this.props.pageView) {
             case 'dashboard' : return <Analytics />
             case 'postsmanagement' : return <PostsManagement />
-            default: return <Settings />
+            default: return <Analytics />
         }
     }
 
