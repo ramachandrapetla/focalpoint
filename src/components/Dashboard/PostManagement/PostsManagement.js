@@ -1,18 +1,86 @@
 import React, { Component } from 'react';
+
+
 import './PostsManagement.css';
-import BarChart from '../../Charts/BarChart';
-import LineChart from '../../Charts/LineChart';
+import PostListItem from './PostListItem';
 //import {connect} from 'react-redux';
 
 class PostsManagement extends Component {
-    //https://s3-us-west-2.amazonaws.com/gaso1/godot-blogging.svg
-    // https://www.peppercontent.io/static/0c6a00235c95566fb7daea97c6e9b75a/individual_writer.svg
-    // https://pngimage.net/wp-content/uploads/2018/05/content-writing-png-8.png
-    //https://www.aiidevelop.com.sg/wp-content/uploads/2020/06/content-writing-banner-vector_Artboard-12.png
+    constructor(props) {
+        super(props);
+        this.state = {
+            postData: [
+                {
+                    title: 'Fill Your Big Fat Bellies',
+                    postedOn: '10-12-2021',
+                    author: 'Ramachandra',
+                    postId: '1234567890',
+                    status: 'Published'
+                },
+                {
+                    title: 'Fill Your Big Fat Bellies',
+                    postedOn: '10-12-2021',
+                    author: 'Ramachandra',
+                    postId: '1234567890',
+                    status: 'Draft'
+                }
+            ],
+            filter: '',
+        }
+        this.filterData = this.filterData.bind(this);
+    }
+
+    filterData(e) {
+        this.setState({filter : e.target.value});
+    }
+
+
     render() {
         return(
             <div className="d-container">
-                Posts Management
+                <h2>POSTS MANAGEMENT</h2>
+                <p className="font-bold sub-text">Manage your posts here. You can make any post active or inactive, can edit post data and delete posts as required.</p>
+                
+                <div>
+                    <div className="fiter-container">
+                        <input className="posts-search-field" type="text" placeholder="Search with post title" onChange={this.filterData}/>
+                        <select className="post-status-filter" onChange={this.filterData}>
+                            <option value="all" selected>
+                                All
+                            </option>
+                            <option value="published">
+                                Published
+                            </option>
+                            <option value="draft">
+                                Draft
+                            </option>
+                            <option value="ready">
+                                Ready
+                            </option>
+                        </select>
+                    </div>
+                    <div className="posts-container">
+                        
+                        {this.state.postData.filter(item => {
+
+                            if(item.title.includes(this.state.filter)){
+                                return true;
+                            }
+                            return false;
+                        }).map(item => {
+                            return <PostListItem postData = {item}/>
+                        })}
+                        
+
+                    </div>
+                </div>
+
+                <div className="paginationWrapper">
+                    <ul className="crumbs">
+                        <li className="crumb prev-crumb">Prev</li>
+                        <li className="crumb next-crumb">Next</li>
+                    </ul>
+                </div>
             </div>
         )
     }

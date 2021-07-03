@@ -11,9 +11,9 @@ const Navbar = () => {
                 <div className="site-menu">
                     <ul className="menu-list">
                         <div className="menu-lg-only">
-                            <li className="menu-list-item"><a href="#">Dashboard</a></li>
-                            <li className="menu-list-item"><a href="#">Sign in</a></li>
-                            <li className="menu-list-item"><a className="nav-sign-up-btn" href="#">Sign up</a></li>
+                            <li className="menu-list-item"><a href="/dashboard">Dashboard</a></li>
+                            <li className="menu-list-item"><a href="/signin">Sign in</a></li>
+                            <li className="menu-list-item"><a className="nav-sign-up-btn" href="/signup">Sign up</a></li>
                         </div>
                         <li className="menu-sm-only menu-list-item"><i className="fa fa-bars" href="#"></i></li>
                     </ul>
