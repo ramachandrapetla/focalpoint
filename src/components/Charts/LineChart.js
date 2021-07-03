@@ -17,8 +17,8 @@ const LineChart = () => {
                     }
                 ]
                 }}
-                height={250}
-                width={400}
+                height={200}
+                width={300}
                 options={
                     {
                         maintainAspectRatio : false,

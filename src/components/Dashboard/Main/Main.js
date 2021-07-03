@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Settings from '../Settings/Settings';
+import PostEditor from '../PostEditor/postEditor';
 import Analytics from '../Analytics/Analytics';
 import PostsManagement from '../PostManagement/PostsManagement';
 import Footer from '../../Footer/Footer';
@@ -15,7 +15,8 @@ class Main extends Component {
         switch(this.props.pageView) {
             case 'dashboard' : return <Analytics />
             case 'postsmanagement' : return <PostsManagement />
-            default: return <Settings />
+            case 'newpyost' : return <PostEditor />
+            default: return <Analytics />
         }
     }
 

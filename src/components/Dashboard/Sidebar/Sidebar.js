@@ -16,6 +16,12 @@ class Sidebar extends Component {
                 navId: 'dashboard'
             },
             {
+                name: 'New Post',
+                classList: 'sidebar__link',
+                iconClass: 'fas fa-plus',
+                navId: 'newpost'
+            },
+            {
                 name: 'Posts Management',
                 classList: 'sidebar__link',
                 iconClass: 'fas fa-newspaper',

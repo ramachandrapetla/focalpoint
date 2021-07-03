@@ -1,9 +1,5 @@
 @import url('../../base.css');
 
-.site-navbar {
-    border-bottom: 1px solid var(--lightGray);
-}
-
 .site-navbar-container {
     position: fixed;
     top:0;
@@ -45,7 +41,7 @@
     color: var(--primaryHover);
 }
 
-.menu-list {
+.menu-list, .menu-lg-only {
     list-style-type: none;
     display: flex;
     justify-content: space-between;
@@ -79,4 +75,15 @@ a.nav-sign-up-btn{
     color: #fff!important;
 }
 
+.menu-sm-only {
+    display: none;
+}
 
+@media only screen and (max-width: 978px) {
+    .menu-lg-only {
+        display: none;
+    }
+    .menu-sm-only {
+        display: block;
+    }
+}

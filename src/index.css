@@ -43,3 +43,11 @@ code {
   font-weight: 700;
 }
 
+.sub-text {
+  color: var(--secondaryColor);
+}
+
+.display-sm-none {
+  display: none;
+}
+
